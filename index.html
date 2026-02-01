@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Nana 💖</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: 
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("IMG_0232.jpeg") no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.55);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 90%;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+
+    .heart {
+      font-size: 70px;
+      cursor: pointer;
+      animation: pulse 1.5s infinite;
+    }
+
+    .message {
+      display: none;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>Hi Nana 💕</h1>
+    <p>
+      Lilian… I call you Nana because you’re soft, warm,  
+      and you make my world feel like home 🤍  
+      <br><br>
+      From Ben — someone who smiles every time he thinks of you.
+    </p>
+
+    <div class="heart" onclick="showMessage()">❤️</div>
+
+    <div class="message" id="msg">
+      You didn’t just tap a heart…  
+      you tapped mine 💖  
+      <br><br>
+      Good morning, my Nana 🌸
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("msg").style.display = "block";
+    }
+  </script>
+</body>
+</html>
